@@ -295,11 +295,31 @@ img {
   color: var(--hover-color);
 }
 .hero {
-  padding: 188px 0;
+  /* padding: 188px 0; */
   background-color: var(--title-text-color);
+  background-image: url("/images/people-office\ 1.png");
   text-align: center;
   max-width: 1440px;
   margin: auto;
+  position: relative;
+  /* background: rgba(46, 47, 66, 0.7); */
+}
+
+.hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(46, 47, 66, 0.7);
+  z-index: 2;
+}
+
+.sec {
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
 }
 
 .hero-title {
@@ -633,15 +653,12 @@ img {
 .footer .text {
   line-height: 1.5;
   color: var(--text-color);
-  max-width: 300px;
+  max-width: 264px;
 }
 .footer-container {
-  display: block;
+  display: flex;
+  gap: 140px;
   /* width: 264px; */
-}
-
-.flex-el {
-  /* width: calc((100% - 72px) / 4); */
 }
 
 .test-container {
@@ -679,3 +696,63 @@ img {
 /* } */
 /* .flex-element:not(:nth-last-child(-n + 3)) { */
 /* margin-bottom: 30px;} */
+
+.icons-con {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.bg-con {
+  padding: 30px;
+  max-width: 264px;
+  max-height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(224, 223, 223);
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.second-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-text {
+  color: white;
+  margin: 0px;
+}
+
+.card {
+  padding: 20px 50px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.customers {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.customers-section {
+  font-size: 36px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
