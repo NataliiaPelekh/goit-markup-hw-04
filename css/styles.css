@@ -2,6 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--hover-color);
+  border-radius: 2px;
 }
 
 :root {
@@ -113,6 +120,9 @@ h2 {
 .people-list {
   list-style: none;
 }
+.contact-item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .visually-hidden {
   position: absolute;
@@ -215,6 +225,11 @@ h2 {
 }
 .navg {
   padding: 24px 0;
+  position: relative;
+  color: var(--hover-color);
+  transition {
+    color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .list {
   list-style: none;
@@ -299,11 +314,16 @@ img {
 .hero {
   /* padding: 188px 0; */
   background-color: var(--title-text-color);
+  /* background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7) ; */
+  /* ), */
+  /* url(../images/people-office\ 1.png); */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.png);
+    url(../images/img-name.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -370,6 +390,7 @@ img {
   /* border: 1px solid var(--background-color); */
   border-radius: 4px;
   border: none;
+  transition { background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .services-list {
   display: flex;
@@ -382,6 +403,31 @@ img {
 }
 .service-name {
   width: calc((100% - 48px) / 3);
+}
+.name {
+  padding: 32px 0;
+}
+.name-list {
+  display: flex;
+   justify-content: center; 
+   gap: 24px;
+}
+.name-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name-icon {fill: var(--text-color);}
+.name-link:hover, .name-link:focus {
+  background-color: var(--hover-color);
+}
+.name-item {
+  width: 40px;
+  height: 40px;
 }
 .service-class {
   padding: 32px 16px;
@@ -603,6 +649,7 @@ img {
   flex-direction: column;
   align-items: center;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   /* background-color: var(--secondary-bg-color); */
 }
 

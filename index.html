@@ -36,12 +36,12 @@
         </nav>
         <address class="contacts">
           <ul class="contacts-nav list">
-            <li>
+            <li class="contact-item">
               <a href="mailto:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="contact-item">
               <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
             </li>
           </ul>
@@ -56,7 +56,9 @@
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <!-- </div> -->
 
-          <button class="button ord" type="button">Order Service</button>
+          <button class="button ord" data-modal-open type="button">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -66,8 +68,8 @@
           <ul class="feature-list list">
             <li class="feature">
               <div class="bg-con">
-                <svg width="64" height="64">
-                  <use href="./images/Vector (2).svg"></use>
+                <svg class="feature-item" width="64" height="64">
+                  <use href="./images/icons.svg#strategy"></use>
                 </svg>
               </div>
               <h3 class="title">Strategy</h3>
@@ -78,7 +80,9 @@
             </li>
             <li class="feature">
               <div class="bg-con">
-                <img class="icons" src="./images/Vector (1).svg" alt="" />
+                <svg class="feature-item" width="64" height="64">
+                  <use href="./images/icons.svg#punctuality"></use>
+                </svg>
               </div>
               <h3 class="title">Punctuality</h3>
               <p class="text">
@@ -88,7 +92,9 @@
             </li>
             <li class="feature">
               <div class="bg-con">
-                <img class="icons" src="./images/Vector.svg" alt="" />
+                <svg class="feature-item" width="64" height="64">
+                  <use href="./images/icons.svg#diligence"></use>
+                </svg>
               </div>
               <h3 class="title">Diligence</h3>
               <p class="text">
@@ -98,7 +104,9 @@
             </li>
             <li class="feature">
               <div class="bg-con">
-                <img class="icons" src="./images/astronaut 1.svg" alt="" />
+                <svg class="feature-item" width="64" height="64">
+                  <use href="./images/icons.svg#technologies"></use>
+                </svg>
               </div>
               <h3 class="title">Technologies</h3>
               <p class="text">
@@ -152,10 +160,39 @@
                 <h3 class="subtitle">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
                 <div class="icons-con">
-                  <img class="icons" src="./images/Ellipse.svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (1).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (2).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (3).svg" alt="" />
+                  <ul class="name-list">
+                    <li class="name-item">
+                      <a class="name-link" href="" aria-label="instagram"></a>
+                        <svg class="name-icon" width="16" height="16">
+                          <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                      </a>
+                      <!-- <img class="icons" src="./images/instagram.svg" alt="" /> -->
+                    </li>
+                    <li class="name-item">
+                     <a class="name-link" href="" aria-label="twitter"></a>
+                        <svg class="name-icon" width="16" height="16">
+                          <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="name-item">
+                      <a class="name-link" href="" aria-label="facebook"></a>
+                        <svg class="name-icon" width="16" height="16">
+                          <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                      <!-- <img class="icons" src="./images/facebook.svg" alt="" /> -->
+                    </li>
+                    <li class="name-item">
+                      <!-- <img class="icons" src="./images/linkedin.svg" alt="" /> -->
+                      <a class="name-link" href="" aria-label="linkedin"></a>
+                        <svg class="name-icon" width="16" height="16">
+                          <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </li>
@@ -165,10 +202,10 @@
                 <h3 class="subtitle">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
                 <div class="icons-con">
-                  <img class="icons" src="./images/Ellipse.svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (1).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (2).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (3).svg" alt="" />
+                  <img class="icons" src="./images/instagram.svg" alt="" />
+                  <img class="icons" src="./images/twitter.svg" alt="" />
+                  <img class="icons" src="./images/facebook.svg" alt="" />
+                  <img class="icons" src="./images/linkedin.svg" alt="" />
                 </div>
               </div>
             </li>
@@ -182,10 +219,10 @@
                 <h3 class="subtitle">Camila Garcia</h3>
                 <p class="text">Marketing</p>
                 <div class="icons-con">
-                  <img class="icons" src="./images/Ellipse.svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (1).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (2).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (3).svg" alt="" />
+                  <img class="icons" src="./images/instagram.svg" alt="" />
+                  <img class="icons" src="./images/twitter.svg" alt="" />
+                  <img class="icons" src="./images/facebook.svg" alt="" />
+                  <img class="icons" src="./images/linkedin.svg" alt="" />
                 </div>
               </div>
             </li>
@@ -199,10 +236,10 @@
                 <h3 class="subtitle">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
                 <div class="icons-con">
-                  <img class="icons" src="./images/Ellipse.svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (1).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (2).svg" alt="" />
-                  <img class="icons" src="./images/Ellipse (3).svg" alt="" />
+                  <img class="icons" src="./images/instagram.svg" alt="" />
+                  <img class="icons" src="./images/twitter.svg" alt="" />
+                  <img class="icons" src="./images/facebook.svg" alt="" />
+                  <img class="icons" src="./images/linkedin.svg" alt="" />
                 </div>
               </div>
             </li>
@@ -212,32 +249,77 @@
         <!-- </section> -->
       </section>
       <section class="customers">
+        <div class="card-container container">
         <h2 class="customers-section">Customers</h2>
-        <div class="card-container">
-          <div class="card">
-            <img class="icons" src="./images/Logo.svg" alt="" />
-          </div>
-          <div class="card">
-            <img class="icons" src="./images/Logo (1).svg" alt="" />
-          </div>
-          <div class="card">
-            <img class="icons" src="./images/Logo (2).svg" alt="" />
-          </div>
-          <div class="card">
-            <img class="icons" src="./images/Logo (3).svg" alt="" />
-          </div>
-          <div class="card">
-            <img class="icons" src="./images/Logo (4).svg" alt="" />
-          </div>
-          <div class="card">
-            <img class="icons" src="./images/Logo (5).svg" alt="" />
+          <!-- <div class="card"> -->
+            <ul class="card-list"> 
+              <li class="card-item"> 
+               <a class="c-item" href="" > <svg class="c-icon" width="104" height="56" >
+                <use href="./images/icons.svg#customers1">
+               </use>
+               </svg>
+               </a>
+                <!-- <img class="icons" src="./images/customers1.svg" alt="" /> -->
+              </li>
+              <li class="card-item">
+                <a class="c-item" href="" > <svg class="c-icon" width="104" height="56" >
+                <use href="./images/icons.svg#customers2">
+               </use>
+               </svg>
+               </a>
+                <!-- <img class="icons" src="./images/customers2.svg" alt="" /> -->
+              </li>
+              <li class="card-item">
+                 <a class="c-item" href="" > <svg class="c-icon" width="104" height="56" >
+                <use href="./images/icons.svg#customers3">
+               </use>
+               </svg>
+               </a>
+                <!-- <img class="icons" src="./images/customers3.svg" alt="" /> -->
+              </li>
+              <li class="card-item">
+                 <a class="c-item" href="" > <svg class="c-icon" width="104" height="56" >
+                <use href="./images/icons.svg#customers4">
+               </use>
+               </svg>
+               </a>
+                <!-- <img class="icons" src="./images/customers4.svg" alt="" /> -->
+              </li>
+              <li class="card-item">
+                 <a class="c-item" href="" > <svg class="c-icon" width="104" height="56" >
+                <use href="./images/icons.svg#customers5">
+               </use>
+               </svg>
+               </a>
+                <!-- <img class="icons" src="./images/customers5.svg" alt="" /> -->
+              </li>
+              <li class="card-item">
+                 <a class="c-item" href="" > <svg class="c-icon" width="104" height="56" >
+                <use href="./images/icons.svg#customers6">
+               </use>
+               </svg>
+               </a>
+                <!-- <img class="icons" src="./images/customers6.svg" alt="" /> -->
+              </li>
+          <!-- </div> -->
+          <!-- <div class="card"> -->
+          <!-- </div> -->
+          <!-- <div class="card"> -->
+          <!-- </div> -->
+          <!-- <div class="card"> -->
+          <!-- </div> -->
+          <!-- <div class="card"> -->
+          <!-- </div> -->
+          <!-- <div class="card"> -->
+            </ul>
           </div>
         </div>
       </section>
     </main>
+    <div class="footer-container container"></div>
     <footer class="footer">
-      <div class="footer-container container">
-        <div>
+      <!-- <div class="footer-container container"> -->
+        <div class="footer-class">
           <a class="logo link" href="./index.html"
             >Web<span class="footer-studio-logo">Studio</span></a
           >
@@ -249,13 +331,54 @@
         <div class="second-block">
           <p class="footer-text">Social media</p>
           <div class="icons-con footer-icons">
-            <img class="icons" src="./images/Ellipse.svg" alt="" />
-            <img class="icons" src="./images/Ellipse (1).svg" alt="" />
-            <img class="icons" src="./images/Ellipse (2).svg" alt="" />
-            <img class="icons" src="./images/Ellipse (3).svg" alt="" />
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="footer-link" href="">
+                  <svg class="f-link" width="24" height="24">
+                    <use href="./images/icons.svg#instagram">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="">
+                  <svg class="f-link" width="24" height="24">
+                    <use href="./images/icons.svg#twitter">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="">
+                  <svg class="f-link" width="24" height="24">
+                    <use href="./images/icons.svg#facebook">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a class="footer-link" href="">
+                  <svg class="f-link" width="24" height="24">
+                    <use href="./images/icons.svg#linkedin">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <!-- <img class="icons" src="./images/instagram.svg" alt="" />
+            <img class="icons" src="./images/twitter.svg" alt="" />
+            <img class="icons" src="./images/facebook.svg" alt="" />
+            <img class="icons" src="./images/linkedin.svg" alt="" /> -->
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-in">
+
+      </div>
+
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
